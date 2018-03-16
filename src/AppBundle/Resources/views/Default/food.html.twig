@@ -1,0 +1,32 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block body %}
+
+
+<ul>
+    {% for i in 0..5 %}
+
+      <li class="food">Пункт меню {{ i }}</li>
+
+    {% endfor %}
+</ul>
+    <style>
+
+
+        .Photo-block{
+            margin-left: 20%;
+
+            display: flex;
+            width: 1000px;
+            height: 200px;
+
+        }
+        .food{
+            margin-left: 30%;
+            width: 700px;
+            border: 1px solid red;
+        }
+
+
+    </style>
+{% endblock %}

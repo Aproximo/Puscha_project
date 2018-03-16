@@ -1,0 +1,42 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block body %}
+<div id="header">
+    <h3 style="margin-left: 40%">Пуща Водиця</h3>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d753.7190916164582!2d30.340059852884465!3d50.54907420912065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b2d82871fa807%3A0xd411fe1b51377dee!2z0JTQuNGC0Y_Rh9C40Lkg0YLQsNCx0ZbRgCDQn9GD0YnQsCDQktC-0LTQuNGG0Y8!5e0!3m2!1sru!2sua!4v1521198279292" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="contact_block">
+        <p>
+            email: <a href="mailto:someone@example.com">someone@example.com</a>
+        </p>
+        <p>phone: <a href="tel:+380633199271" class="Blondie">+38(063) 31 99 271</a></p>
+    </div>
+</div>
+    <style>
+
+        .contact_block{
+
+            position: absolute;
+            bottom: 20px;
+            left: 200px;
+
+
+        }
+        #header {
+            position: relative;
+            min-height: 150px;
+            height: 850px;
+        }
+
+       .map{
+           margin-left: 20%;
+           width: 1002px;
+           height: 602px;
+           /*border: 1px solid red;*/
+           box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       }
+
+
+    </style>
+{% endblock %}

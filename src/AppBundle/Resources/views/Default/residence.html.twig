@@ -1,0 +1,28 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block body %}
+    <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
+    <div class="box">
+        <div class="if-div">
+            <span>Номер 1</span>
+            <iframe src="https://360player.io/p/k6f7rb/" frameborder="0" width=560 height=315 allowfullscreen data-token="k6f7rb"></iframe>
+        </div>
+        <div class="if-div">
+            <span>номер 2</span>
+            <iframe src="https://360player.io/p/eYbTjF/" frameborder="0" width=560 height=315 allowfullscreen data-token="k6f7rb"></iframe>
+        </div>
+    </div>
+
+    <style>
+
+.if-div{
+    margin-left: 10px;
+    display: flex;
+}
+       .box{
+           display: inline-flex;
+       }
+
+
+    </style>
+{% endblock %}
